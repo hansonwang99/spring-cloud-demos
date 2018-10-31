@@ -1,0 +1,18 @@
+server:
+  port: 1111
+  ssl:
+    enabled: true
+    key-store: classpath:codesheepserver.p12
+    key-store-password: codesheep.cn
+    key-store-type: PKCS12
+    key-alias: server
+
+eureka:
+  instance:
+    hostname: localhost
+    securePort: 1111
+    securePortEnabled: true
+    nonSecurePortEnabled: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
