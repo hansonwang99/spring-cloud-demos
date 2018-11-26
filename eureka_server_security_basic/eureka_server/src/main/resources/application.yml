@@ -1,0 +1,13 @@
+server:
+  port: 1111
+
+spring:
+  security:
+    user:
+      name: codesheep
+      password: www.codesheep.cn
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
